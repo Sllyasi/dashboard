@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traffic Fine Payment System Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+ </head>
+ <body>
+  <div class="dashboard-container">
+   <header>
+    <h1>Traffic Fine Payment System</h1>
+   </header>
+   <main>
+    <section class="overview">
+     <div class="overview-item">
+      <h2>Total Fines</h2>
+      <p id="total-fines">150</p>
+     </div>
+     <div class="overview-item">
+      <h2>Paid Fines</h2>
+      <p id="paid-fines">75</p>
+     </div>
+     <div class="overview-item">
+      <h2>Unpaid Fines</h2>
+      <p id="unpaid-fines">75</p>
+     </div>
+    </section>
+
+    <section class="recent-fines">
+     <h2>Recent Fines</h2>
+     <table>
+      <thead>
+       <tr>
+        <th>Fine ID</th>
+        <th>Vehicle Number</th>
+        <th>Offense</th>
+        <th>Amount</th>
+        <th>Status</th>
+       </tr>
+      </thead>
+      <tbody id="recent-fines-list">
+       <tr>
+        <td>FIN001</td>
+        <td>WP-AA-1234</td>
+        <td>Speeding</td>
+        <td>5000 LKR</td>
+        <td>Unpaid</td>
+       </tr>
+       <tr>
+        <td>FIN002</td>
+        <td>WP-BB-5678</td>
+        <td>Parking Violation</td>
+        <td>2500 LKR</td>
+        <td>Paid</td>
+       </tr>
+       <tr>
+        <td>FIN003</td>
+        <td>WP-CC-9012</td>
+        <td>Traffic Signal Violation</td>
+        <td>3000 LKR</td>
+        <td>Unpaid</td>
+       </tr>
+       </tbody>
+     </table>
+    </section>
+
+    <section class="search-fines">
+     <h2>Search Fines</h2>
+     <form id="search-form">
+      <input type="text" placeholder="Enter Fine ID or Vehicle Number">
+      <button type="submit">Search</button>
+     </form>
+     <div id="search-results">
+      </div>
+    </section>
+   </main>
+   <footer>
+    <p>&copy; 2023 Traffic Fine Payment System</p>
+   </footer>
+  </div>
+  <script src="script.js"></script>
+ </body>
+ </html>
